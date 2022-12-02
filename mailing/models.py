@@ -46,8 +46,8 @@ class Mailing(models.Model):
     start_time = models.DateTimeField()     # время запуска рассылки
     stop_time = models.DateTimeField()      # Время окончания рассылки
     text_message = models.TextField()            # Сообщение
-    filter_mobile = models.ForeignKey(MobileCode, on_delete=models.CASCADE)                       # фильтр по мобильному оператору получателя
-    filter_tag = models.ForeignKey(Tag, on_delete=models.CASCADE)       # фильтр по тэгу
+    filter_mobile = models.ForeignKey(MobileCode, null=True, on_delete=models.CASCADE)                       # фильтр по мобильному оператору получателя
+    filter_tag = models.ForeignKey(Tag, null=True, on_delete=models.CASCADE)       # фильтр по тэгу
     create = models.DateTimeField(auto_now_add=True)        # время cоздания рассылки (для статисики и поиска)
     update = models.DateTimeField(auto_now=True)            # время изменения рассылки (для статисики и поиска)
 

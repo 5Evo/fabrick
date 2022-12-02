@@ -21,6 +21,11 @@ from mailing import views
 
 router = routers.DefaultRouter()
 router.register(r'statuses', views.StatusViewSet)
+router.register(r'tags', views.TagViewSet)
+router.register(r'mobilecode', views.MobileCodeViewSet)
+router.register(r'mailings', views.MailingViewSet)
+router.register(r'clients', views.ClientViewSet)
+router.register(r'messages', views.MessageViewSet)
 
 
 urlpatterns = [
