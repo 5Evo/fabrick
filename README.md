@@ -1,4 +1,4 @@
-Project48 - CRM for photographers
+Testing for fabrique.studio
 
 This project is under development.
 To run the project, follow the steps:
