@@ -13,4 +13,10 @@ To run the project, follow the steps:
     python manage.py createsuperuser
     python manage.py runserver
 
-These commands will create a database
+что работает:
+- запускается сервер с API 
+- Можно создавать/редактировать/удалять сущности
+- при создании рассылки - запускается процедура начала рассылки или постановки в очередь.
+
+
+К сожалению саму рассылку/постановку в очередь не успел сделать
